@@ -1,0 +1,13 @@
+{% extends "mail_templated/base.tpl" %}
+
+{% block subject %}
+    You haven't practiced for more than a week.
+{% endblock %}
+
+{% block html %}
+    <p>
+        Dear {{ first_name }}, you have not studied English for more than a week. We want to tell you that your money,
+        one might say, is going nowhere. If you really want to learn this beautiful language, we strongly
+        recommend that you come back and continue learning. Sincerely, project team!
+    </p>
+{% endblock %}

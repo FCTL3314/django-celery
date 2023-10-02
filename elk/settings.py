@@ -321,6 +321,10 @@ CELERYBEAT_SCHEDULE = {
         'task': 'accounting.tasks.bill_timeline_entries',
         'schedule': timedelta(minutes=1),
     },
+    'notify_users_that_already_week_without_classes': {
+        'task': 'timeline.tasks.week_without_classes',
+        'schedule': timedelta(hours=1),
+    },
 }
 
 
